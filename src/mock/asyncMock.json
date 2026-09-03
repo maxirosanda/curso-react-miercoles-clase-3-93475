@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Auriculares Bluetooth",
+        "description": "Auriculares inalámbricos con cancelación de ruido y 20 horas de batería.",
+        "price": 12999,
+        "category": "Electrónica",
+        "image":"",
+        "stock": 45
+    },
+    {
+        "id": 2,
+        "title": "Teclado Mecánico RGB",
+        "description": "Teclado gamer con switches azules e iluminación personalizable.",
+        "price": 24500,
+        "category": "Electrónica",
+        "image":"",
+        "stock": 30
+    },
+    {
+        "id": 3,
+        "title": "Mochila Antirrobo",
+        "description": "Mochila resistente al agua con puerto USB y compartimento para notebook.",
+        "price": 18750,
+        "category": "Accesorios",
+        "image":"",
+        "stock": 60
+    },
+    {
+        "id": 4,
+        "title": "Botella Térmica 1L",
+        "description": "Botella de acero inoxidable que mantiene la temperatura por 12 horas.",
+        "price": 8990,
+        "category": "Hogar",
+        "image":"",
+        "stock": 120
+    },
+    {
+        "id": 5,
+        "title": "Mouse Inalámbrico",
+        "description": "Mouse ergonómico con sensor óptico de alta precisión y batería recargable.",
+        "price": 9500,
+        "category": "Electrónica",
+        "image":"",
+        "stock": 80
+    },
+    {
+        "id": 6,
+        "title": "Lámpara de Escritorio LED",
+        "description": "Lámpara regulable con tres niveles de intensidad y carga inalámbrica.",
+        "price": 15300,
+        "category": "Hogar",
+        "image":"",
+        "stock": 25
+    },
+    {
+        "id": 7,
+        "title": "Zapatillas Running",
+        "description": "Zapatillas livianas con amortiguación para entrenamiento y uso diario.",
+        "price": 42000,
+        "category": "Deportes",
+        "image":"",
+        "stock": 50
+    },
+    {
+        "id": 8,
+        "title": "Remera Deportiva",
+        "description": "Remera de tela transpirable de secado rápido, ideal para ejercicio.",
+        "price": 7200,
+        "category": "Ropa",
+        "image":"",
+        "stock": 200
+    },
+    {
+        "id": 9,
+        "title": "Cuaderno A5 Tapa Dura",
+        "description": "Cuaderno de 200 hojas con papel de alta calidad y cinta marcadora.",
+        "price": 4500,
+        "category": "Papelería",
+        "image":"",
+        "stock": 150
+    },
+    {
+        "id": 10,
+        "title": "Cafetera de Cápsulas",
+        "description": "Cafetera compacta compatible con cápsulas estándar y depósito de 1L.",
+        "price": 35900,
+        "category": "Hogar",
+        "image":"",
+        "stock": 18
+    }
+]

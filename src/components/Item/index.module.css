@@ -1,0 +1,101 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+    align-self: flex-start;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #4dabf7;
+    background-color: #e7f5ff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+
+.title {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+    color: #1a1a1a;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin: 0 0 1rem;
+    flex-grow: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.stock {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.addButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4dabf7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.addButton:hover {
+    background-color: #339af0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(77, 171, 247, 0.4);
+}
+
+.addButton:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(77, 171, 247, 0.3);
+}
+
+.addButton:disabled {
+    background-color: #ced4da;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.buttonIcon {
+    width: 18px;
+    height: 18px;
+}

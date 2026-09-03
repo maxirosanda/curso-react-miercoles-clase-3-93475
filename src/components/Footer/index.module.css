@@ -1,0 +1,40 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footerContent {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.footerList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footerTitle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.footerList a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footerList a:hover {
+    color: #4dabf7;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    color: #999;
+}
