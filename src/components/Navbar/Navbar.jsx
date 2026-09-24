@@ -1,24 +1,26 @@
 import styles from "./index.module.css"
+import { useNavigate, Link } from "react-router-dom"
+import {useContext} from "react"
+import { CartContext } from "../../context/CartContext.jsx"
 
-function Navbar({cartProductCounter}) {
+function Navbar() {
+    
+    const navigate = useNavigate()
+    const { cartProductCounter } = useContext(CartContext)
+
     return (
-        <nav className={` w-full  ${styles.navbar}`}>
+        <nav className={styles.navbar}>
             <ul className={styles.navList}>
                 <li className={styles.navItem}>
-                    <a href="/">Inicio</a>
+                    <Link to="/">Inicio</Link>
                 </li>
-                <li className={styles.navItem}>
-                    <a href="/about">Nosotros</a>
-                </li>
-                <li className={styles.navItem}>
-                    <a href="/services">Servicios</a>
-                </li>
+
                 <li className={styles.navItem}>
                     <a href="/contact">Contacto</a>
                 </li>
             </ul>
 
-            <div className={styles.cart}>
+            <button className={styles.cart} onClick={()=> navigate("/cart")}>
                 <svg
                     className={styles.cartIcon}
                     xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +38,7 @@ function Navbar({cartProductCounter}) {
                 {cartProductCounter > 0 && (
                     <span className={styles.cartBadge}>{cartProductCounter}</span>
                 )}
-            </div>
+            </button>
         </nav>
     )
 }

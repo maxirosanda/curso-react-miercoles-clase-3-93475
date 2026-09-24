@@ -1,6 +1,13 @@
 import styles from "./index.module.css"
+import { useNavigate } from "react-router-dom"
+import { CartContext } from "../../context/CartContext.jsx"
+import { useContext } from "react"
 
-function Item({product,addProductCart}){
+function Item({product}){
+
+    const navigate = useNavigate()
+    const { addProductCart } = useContext(CartContext)
+
     return(
         <div className={styles.card}>
             <span className={styles.category}>{product.category}</span>
@@ -10,6 +17,12 @@ function Item({product,addProductCart}){
                 <span className={styles.price}>${product.price}</span>
                 <span className={styles.stock}>Stock: {product.stock}</span>
             </div>
+            <button
+                className={styles.addButton}
+                onClick={()=> navigate("/product-detail/" + product.id)}
+            >
+                Detalle del producto
+            </button>
             <button
                 className={styles.addButton}
                 onClick={()=> addProductCart(product.id,1)}
