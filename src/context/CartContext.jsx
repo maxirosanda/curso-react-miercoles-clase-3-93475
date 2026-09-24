@@ -12,17 +12,21 @@ export function CartProvider({children}) {
             const result = await fetch("/mock/asyncMock.json")
             const data = await result.json()
             const product = data.find(product => product.id === id)
-            product.quantity = quantity
-            setCart([...cart,product])
-            setCartProductCounter(cartProductCounter + quantity)
+            setCart(prev => [...prev,{...product,quantity}])
+            setCartProductCounter(prev => prev + quantity)
         } catch (error) {
             console.log(error)
         }
 
     }
 
+    const clearCart = () => {
+        setCart([])
+        setCartProductCounter(0)
+    }
+
     return (
-        <CartContext.Provider value={{cart, addProductCart,cartProductCounter}}>
+        <CartContext.Provider value={{cart, clearCart, addProductCart,cartProductCounter}}>
             {children}
         </CartContext.Provider>
     )

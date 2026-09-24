@@ -3,12 +3,13 @@ import { useContext } from "react"
 import { CartContext } from "../../context/CartContext.jsx"
 
 function CartPage() {
-    const { cart } = useContext(CartContext)
+    const { cart, clearCart } = useContext(CartContext)
 
     if (!cart) return
 
     return (
         <div className={styles.container}>
+            {cart.length!== 0 ? <button onClick={clearCart}>vaciar carrito</button> : null}
             {cart.map(product => (
                 <div key={product.id} className={styles.card}>
                     <div className={styles.info}>
